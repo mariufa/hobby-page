@@ -37,7 +37,8 @@ gulp.task('env:test', function () {
 
 // Set NODE_ENV to 'development'
 gulp.task('env:dev', function () {
-  process.env.NODE_ENV = 'development';
+  // Comment this to be able to set NODE_ENV when starting docker container
+  //process.env.NODE_ENV = 'development';
 });
 
 // Set NODE_ENV to 'production'
